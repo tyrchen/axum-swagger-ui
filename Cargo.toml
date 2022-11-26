@@ -1,6 +1,6 @@
 [package]
 name = "axum-swagger-ui"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 license = "MIT"
 documentation = "https://docs.rs/axum-swagger-ui"
@@ -14,4 +14,4 @@ categories = ["development-tools"]
 keywords = ["axum", "swagger", "openapi"]
 
 [dependencies]
-axum = "0.6.0-rc.5"
+axum = "0.6.0"
