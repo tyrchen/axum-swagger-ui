@@ -2,7 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [0.2.0] - 2022-11-24
+
+[ca0b427](ca0b42710fd6557efdf286391f92187e8ebf6866)...[b59e361](b59e361899aa98feeb1fee05e54b7a657027f97f)
 
 ### Features
 
