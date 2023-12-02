@@ -5,10 +5,10 @@ Swagger UI code comes from: [https://github.com/swagger-api/swagger-ui](https://
 Usage:
 
 ```rust
-let doc_url = "/openapi.json";
+let doc_url = "swagger/openapi.json";
 let app = Router::new()
-    .nest("/swagger-ui", SwaggerUi::setup(doc_url))
-    .route(doc_url, get(openapi_spec_handler))
+    .route("/swagger", get(|| async { swagger_ui(doc_url) }))
+    .route(doc_url, get(|| async { include_str!("openapi.json") }))
     // your other routes
     .route("/", get(|| async { "Hello, World!" }));
 ```
